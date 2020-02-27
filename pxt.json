@@ -1,0 +1,28 @@
+{
+    "name": "Tinybit-Bluetooth",
+    "version": "1.0.2",
+    "description": "Extension for YahBoom Tinybit-Bluetooth V1.0.2",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*",
+        "neopixel": "github:lzty634158/pxt-neopixel"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "main.ts",
+        "_locales/zh-cn/Tinybit-Bluetooth-strings.json",
+        "_locales/zh-tw/Tinybit-Bluetooth-strings.json",
+        "_locales/zh-cn/Tinybit-Bluetooth-jsdoc-strings.json",
+        "_locales/zh-tw/Tinybit-Bluetooth-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "license": "MIT"
+}

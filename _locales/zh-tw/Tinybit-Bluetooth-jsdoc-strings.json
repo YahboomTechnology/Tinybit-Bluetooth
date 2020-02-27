@@ -1,0 +1,14 @@
+{
+
+    "Tinybit.Ultrasonic_Car": "返回超聲波距離（cm）",
+    "Tinybit.RGB_Car_Program": "使用此方塊替換Neopixel中的strip方塊",
+    "Tinybit.RGB_Car_Big": "選擇車頭探照燈顏色",
+    "Tinybit.RGB_Car_Big2": "自定義設定車頭探照燈RGB顏色",
+    "Tinybit.Music_Car": "播放音樂",
+    "Tinybit.Voice_Sensor": "返回聲音感測器的值，使用前請確保開關旁邊的2pin排針已插上跳線帽",
+    "Tinybit.Line_Sensor": "判斷尋線感測器是否檢測到黑線（或白線）",
+    "Tinybit.CarCtrl": "控制小車運動狀態",
+    "Tinybit.CarCtrlSpeed": "控制小車運動狀態和速度",
+    "Tinybit.CarCtrlSpeed2": "分別控制小車兩個輪子的速度"
+
+}
