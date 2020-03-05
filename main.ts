@@ -392,7 +392,7 @@ namespace Tinybit {
         // let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
         // return Math.floor(d / 40);
 
-        let list: Array<number> = [0, 0, 0, 0, 0];
+        let list: Array<number> = [0, 0, 0];
         for (let i = 0; i < 3; i++) {
             pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
             pins.digitalWritePin(DigitalPin.P16, 0);
