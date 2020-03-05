@@ -383,15 +383,29 @@ namespace Tinybit {
     //% weight=87
     //% blockGap=10
     export function Ultrasonic_Car(): number {
-        pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
-        pins.digitalWritePin(DigitalPin.P16, 0);
-        control.waitMicros(2);
-        pins.digitalWritePin(DigitalPin.P16, 1);
-        control.waitMicros(15);
-        pins.digitalWritePin(DigitalPin.P16, 0);
-        let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
-        return Math.floor(d / 40);
+        // pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
+        // pins.digitalWritePin(DigitalPin.P16, 0);
+        // control.waitMicros(2);
+        // pins.digitalWritePin(DigitalPin.P16, 1);
+        // control.waitMicros(15);
+        // pins.digitalWritePin(DigitalPin.P16, 0);
+        // let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
+        // return Math.floor(d / 40);
 
+        let list: Array<number> = [0, 0, 0, 0, 0];
+        for (let i = 0; i < 3; i++) {
+            pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
+            pins.digitalWritePin(DigitalPin.P16, 0);
+            control.waitMicros(2);
+            pins.digitalWritePin(DigitalPin.P16, 1);
+            control.waitMicros(15);
+            pins.digitalWritePin(DigitalPin.P16, 0);
+            let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
+            list[i] = Math.floor(d / 40);
+        }
+        
+        let length = (list[0] + list[1] + list[2]) / 3;
+        return Math.floor(length);
 
         // let list: Array<number> = [0, 0, 0, 0, 0];
         // for (let i = 0; i < 5; i++) {
